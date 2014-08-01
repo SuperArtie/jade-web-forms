@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Box Generator Output
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    while count
+      - count--
+      - var i = Math.floor(Math.random() * colors.length)
+      - var c = colors[i]
+      - var w = Math.floor(Math.random() * ((width[1] - width[0]) + 1)) + width[0]
+      - var h = Math.floor(Math.random() * ((height[1] - height[0]) + 1)) + height[0]
+      .colors(style='background-color:#{c}; width:#{w}px; height:#{h}px;')

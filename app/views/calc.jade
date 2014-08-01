@@ -1,0 +1,18 @@
+doctype html
+html
+  meta(charset='ut-8')
+  title Calc
+  link(rel='stylesheet' href='/css/style.css')
+  body
+    h1 Calculator
+    h3 Sum: #{sum}
+    form(method='post' action='/calc')
+      label x
+      input(type='text' name='x' placeholder='x' autofocus=true)
+      label op
+      input(type='text' name='operator' placeholder='operator')
+      label y
+      input(type='text' name='y' placeholder='y')
+      button Calc
+      textarea
+        blahblahblah

@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Box Generator Input
+    link(rel='stylesheet' href='/css/style.css')
+  body
+    form(method='post', action='/boxes')
+      label # of boxes
+      input(type='text', name='count', placeholder='number of boxes to generate', autofocus=true)
+      br
+      label width
+      input(type='text', name='width', placeholder='enter width')
+      br
+      label height
+      input(type='text', name='height', placeholder='enter height')
+      br
+      label colors
+      textarea(name='colors', placeholder='enter colors here separated by a comma') green, blue, red, magenta, cyan, teal, pink, purple, orange, yellow, brown, gray, black
+      br
+      button Make
